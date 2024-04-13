@@ -8,7 +8,6 @@ import {
   Pressable,
 } from "react-native";
 import { Redirect, router } from "expo-router";
-import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const OTP = () => {

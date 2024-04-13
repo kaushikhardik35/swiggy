@@ -12,16 +12,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import SearchBar from "../../components/searchBar";
 import AddressBarSwiggy from "../../components/addressBarSwiggy";
 import Carousel from "../../components/Carousel";
-import { useNavigation } from "expo-router";
-
+import { Redirect, router } from "expo-router";
 const Home = () => {
-  const navigation = useNavigation();
-
   const handlePress = () => {
-    navigation.navigate("instamart");
+    router.push("/instamart");
   };
   const handlePress2 = () => {
-    navigation.navigate("food");
+    router.push("/food");
   };
 
   return (
